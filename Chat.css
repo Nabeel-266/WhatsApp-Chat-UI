@@ -1,0 +1,564 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* For main */
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+}
+
+/* For Sidebar Section */
+
+#sidebar{
+    width: 3.6%;
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.message-icon{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+}
+.message-icon:hover{
+    background-color: rgb(60, 60, 60);
+}
+.message-icon a{
+    text-decoration: none;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-icon a img{
+    width: 22px;
+}
+
+.contact-icon{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+}
+.contact-icon:hover{
+    background-color: rgb(60, 60, 60);
+}
+.contact-icon a{
+    text-decoration: none;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-icon a img{
+    width: 22px;
+    rotate: 15deg;
+}
+
+.status-icon{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+}
+.status-icon:hover{
+    background-color: rgb(60, 60, 60);
+}
+.status-icon a{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.status-icon a img{
+    width: 22px;
+}
+
+.setting-icon{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 95px;
+}
+.setting-icon:hover{
+    background-color: rgb(60, 60, 60);
+}
+.setting-icon a{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.setting-icon a img{
+    width: 22px;
+}
+
+.avatar-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+}
+.avatar-icon span{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: white;
+}
+.avatar-icon span img{
+    width: 25px;
+}
+
+/* For Contact-Area Section */
+
+#contact-area{
+    width: 28%;
+    height: 100%;
+    background-color: rgb(35, 35, 35);
+}
+#contact-area .top{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+#contact-area .top img{
+    width: 25px;
+    height: 25px;
+}
+#contact-area .top h5{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 4px;
+    color: white;
+}
+
+#contact-area .middle-01{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.middle-01 h2{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 25px;
+}
+.middle-01 img{
+    position: relative;
+    right: 25px;
+}
+
+#contact-area .middle-02{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-02 .search{
+    background-color: rgb(52, 52, 52);
+    width: 330px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 7px;
+    border-bottom: 1px solid white;
+}
+.search input{
+    width: 290px;
+    height: 28px;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(52, 52, 52);
+    color: rgb(235, 235, 235);
+    font-weight: 400;
+}
+.search input::placeholder{
+    font-size: 13px;
+    font-family: 'poppins', sans-serif;
+    color: rgb(235, 235, 235);
+}
+.search i{
+    font-size: 16px;
+    color: white;
+}
+
+
+#contact-area .chats{
+    width: 100%;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.chats .chats-01{
+    width: 340px;
+    height: 65px;
+    display: flex;
+    gap: 5px;
+    border-radius: 5px;
+}
+.chats .chats-01:hover{
+    background-color: rgb(57, 57, 57);
+}
+.picture{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picture .pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: gray;
+    overflow: hidden;
+}
+.pic img{
+    width: 50px;
+    height: 50px;
+}
+.text{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail{
+    width: 285px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    color: white;
+}
+.detail h4{
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+}
+.detail p{
+    font-family: verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+
+
+/* For Message-Area Section */
+
+#message-area{
+    width: 69.4%;
+    height: 100%;
+    background: url(./Images/chat-background.jpg), rgb(61, 61, 61);
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.user-name{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(33, 33, 33,0.7);
+}
+.user-name .chats-02{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+}
+.chats-02 .image{
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.chats-02 .image .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: gray;
+    overflow: hidden;
+}
+.img img{
+    width: 50px;
+    height: 50px;
+}
+.user-name .chats-02 .text-side{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.update{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    color: white;
+}
+.update .nam{
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600px;
+}
+.update .msge{
+    font-family: verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+#message-area .messages{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 65px;
+}
+.text-box-client{
+    width: 100%;
+    height: 50px;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+}
+.client-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.client-img img{
+    width: 40px;
+    height: 40px;
+}
+.client-msg{
+    width: 400px;
+    height: 45px;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0px 10px 10px 10px;
+}
+.client-msg h6{
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+.text-box-user{
+    width: 100%;
+    height: 50px;
+    margin-top: 13px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.user{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+}
+.user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: rgb(100, 100, 100);
+}
+.user-img img{
+    width: 40px;
+    height: 40px;
+}
+.user-msg{
+    width: 400px;
+    height: 45px;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0px 10px 10px 10px;
+}
+.user-msg h6{
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(219, 219, 219);
+}
+.user-msg-small{
+    width: 220px;
+    height: 45px;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0px 10px 10px 10px;
+}
+.user-msg-small h6{
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(219, 219, 219);
+}
+
+.typing{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(35, 35, 35);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.typing .emoji{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typing .emoji:hover{
+    background-color: rgb(52, 52, 52);
+}
+.emoji i{
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+}
+.typing .file-attachment{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.typing .file-attachment:hover{
+    background-color: rgb(52, 52, 52);
+}
+.file-attachment i{
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+}
+.typing input{
+    width: 700px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(35, 35, 35);
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(210, 210, 210);
+}
+.typing input::placeholder{
+    color: rgb(210, 210, 210);
+}
+.typing .send{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typing .send:hover{
+    background-color: rgb(52, 52, 52);
+}
+.send i{
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+}
+.typing .microphone{
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typing .microphone:hover{
+    background-color: rgb(52, 52, 52);
+}
+.microphone i{
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+}
+
